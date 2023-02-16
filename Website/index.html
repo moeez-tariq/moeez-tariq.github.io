@@ -3,15 +3,17 @@
 <html>
     <head>
         <meta charset = "uft-8">
-        <title>MT's Snack Kitchen</title>
+        <title>Snack Kitchen</title>
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0, user-scalable = yes">
+        <link rel = "stylesheet" href = "style_dates.css">
     </head>
     
     <body>
         <div id = "container">
             <div id = "header">
                 <div id = "brand">
-                    <h1><a href = "#">MT's Snack Kitchen</a></h1>
+                    <a href = "index.html"> <img id = "logo" src = "logo.png" width="100px" height = "150px"></a>
+                    <h1 id = "brand"><a href = "index.html">Snack Kitchen</a></h1>
                 </div>
                 
                 <div id = "searchBox">
@@ -25,56 +27,73 @@
             </div>
             <div id = "menu">
                 <ul>
-                    <li><a href = "#">HOME</a></li>
-                    <li><a href = "#">ABOUT US</a></li>
-                    <li><a href = "#"> DATE SNACK</a></li>
-                    <li><a href = "#">RECIPES </a></li>
-                    <li><a href = "#">FEEDBACK</a></li>
+                    <li><a href = "/#header">HOME</a></li>
+                    <li><a href = "/#facts">DATE FACTS</a></li>
+                    <li><a href = "#leftsidebar">DATE SNACK</a></li>
+                    <li><a href = "/#other_recipes">RECIPES</a></li>
+                    <li><a href = "#feedback_div">FEEDBACK</a></li>
                 </ul>
             </div>
             <div class = "clear"></div>
             <div id = "facts" class = "screenplay">
-                <img src = "date_fact.jpeg" width="400px" height = "200px">
+                <h2>DID YOU KNOW...?</h2>
+                <h3 id = "changeable_heading">DATES ARE NUTRIENT RICH</h3>
+                <p id = "changeable_text">Three dates provide about 200 calories, 54 grams of carbohydrates with about five grams of fiber, a gram of protein, and no fat. This portion also supplies smaller amounts of a wide range of nutrients, including B vitamins, vitamin K, calcium, iron, magnesium, potassium, zinc, and manganese.</p>
+                <button id="text_button">NEXT</button>
         <br />
-        <label>FACTS ABOUT DATES</label>
             </div>
             <div class = "clear"></div>
             <div id = "leftsidebar" class = "sidebar">
-                <h3>INGREDIENTS YOU NEED FOR DATE SNACK </h3>
+                <h3>INGREDIENTS FOR DATE SNACK </h3>
                 <ul>
-                    <li><a href = "#">INGREDIENT 1</a></li>
-                    <li><a href = "#"> INGREDIENT 2</a></li>
-                    <li><a href = "#"> INGREDIENT 3</a></li>
-                    <li><a href = "#"> INGREDIENT 4</a></li>
-                    <li><a href = "#"> INGREDIENT 5</a></li>
-                    <li><a href = "#"> INGREDIENT 6</a></li>
-                    <li><a href = "#"> INGREDIENT 7</a></li>
-                    <li><a href = "#"> INGREDIENT 8</a></li>
-                    <li><a href = "#"> INGREDIENT 9</a></li>
+                    <li><a href = "#">Dates</a></li>
+                    <li><a href = "#">Chocolates</a></li>
+                    <li><a href = "#">Peanut Butter</a></li>
+                    <li><a href = "#">Loads of Love</a></li>
                 </ul>
             </div>
-            <div id = "rightsidebar" class = "sidebar">
-                <iframe width="560" height="315" src="https://www.youtube.com/watch?v=6lEg0DvURk4&t=6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id = "rightsidebar" >
+                <iframe width = 100% height = "100%" src="https://www.youtube.com/embed/YoG38HP6djc" allowfullscreen controls class = "sidebar2">
+                  Your browser does not support the video tag.
+                </iframe>
         <br />
-        <label>How To Make A Date Snack</label>
+<!--
                 <br />
             <br />
             <br />
+-->
             </div>
             <div class = "clear"></div>
             
-            <div id = "recipes" class = "screenplay">
-                <img src = "snacks.jpeg" width="200px" height = "400px">
-        <br />
-        <label>MORE FUN RECIPES</label>
+            <div id = "other_recipes">
+                <h2>OTHER RECIPES TO TRY..!</h2>
+                <h3 id = "changeable_label">'Avocado Toast'</h3>
+                <p id = "changeable_recipe">Toast a slice of bread. Mash 1/2 an avocado and spread it on the toast. Top with a fried or poached egg, and sprinkle with salt and pepper to taste.</p>
+                <button id="recipe_button">NEXT</button>
+        <br>
             </div>
+        <br />
             
-<!--            <footer class = "footer">-->
-                <div class = "footer">
-                    <p>MT Web Development. Copyright &copy; 2022-2023.</p>
-                </div>
-<!--            </footer>-->
+        <div class = "clear"></div>
+
+        <div class="row two_column">
+            <div id = "feedback_div" style="width: 45%">
+                <textarea id="feedback_text" placeholder="WE VALUE YOUR FEEDBACK. PLEASE LET US KNOW IF YOU LIKED OUR RECIPE :)"></textarea>
+            </div>
+            <div id = "recipe_div" style="width: 45%"><textarea id=feedback_text placeholder = "DO YOU HAVE ANY RECIPES OF YOUR OWN YOU WOULD LIKE TO SUBMIT? :)"></textarea></div>
         </div>
+            <div class=" row submit_buttons">
+                <input type = "submit" value = "SUBMIT" class = "submit_feedback">
+                <input type = "submit" value = "SUBMIT" class = "submit_recipe">
+            </div>
+        
+<!--    <footer class = "footer">-->
+        <div class = "footer">
+            <p>MT Web Development. Copyright &copy; 2022-2023.</p>
+        </div>
+<!--    </footer>-->
+        </div>
+        <script src="js_dates.js"></script>
     </body>
 
 </html>
