@@ -5,20 +5,28 @@
         <meta charset = "uft-8">
         <title>Snack Kitchen</title>
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0, user-scalable = yes">
+<!--        link the css file-->
         <link rel = "stylesheet" href = "style_dates.css">
     </head>
     
     <body>
+<!--        ensure everything stays in this container so that margains are left on the sides-->
         <div id = "container">
+<!--            header contains logo, heading and the searchbox-->
             <div id = "header">
                 <div id = "brand">
+<!--                    href for image so that when you click the image it takes you to the same page again-->
                     <a href = "index.html"> <img id = "logo" src = "logo.png" width="100px" height = "150px"></a>
                     <h1 id = "brand"><a href = "index.html">Snack Kitchen</a></h1>
                 </div>
                 
+<!--                searchbox does not work as of now but will in the future-->
                 <div id = "searchBox">
+<!--                    form and get makes a form and the user can edit it-->
                     <form method = "get">
+<!--                        placeholder shows the text when no text is inputted-->
                         <input type = "text" class = "text" placeholder = "Recipes & Facts">
+<!--                        the submit button in the search box-->
                         <input type = "submit" value = "SEARCH" class = "submit">  
 </form>
                 </div>
@@ -26,23 +34,29 @@
                 </div>
             </div>
             <div id = "menu">
+<!--                make an unordered list for all these options-->
                 <ul>
-                    <li><a href = "/#header">HOME</a></li>
-                    <li><a href = "/#facts">DATE FACTS</a></li>
+<!--                    add <a> so that these can help scroll down later-->
+                    <li><a href = "#header">HOME</a></li>
+                    <li><a href = "#facts">DATE FACTS</a></li>
                     <li><a href = "#leftsidebar">DATE SNACK</a></li>
-                    <li><a href = "/#other_recipes">RECIPES</a></li>
+                    <li><a href = "#other_recipes">RECIPES</a></li>
                     <li><a href = "#feedback_div">FEEDBACK</a></li>
                 </ul>
             </div>
             <div class = "clear"></div>
+<!--            this is the carousel type screenplay-->
             <div id = "facts" class = "screenplay">
+<!--                has all the facts about dates-->
                 <h2>DID YOU KNOW...?</h2>
                 <h3 id = "changeable_heading">DATES ARE NUTRIENT RICH</h3>
                 <p id = "changeable_text">Three dates provide about 200 calories, 54 grams of carbohydrates with about five grams of fiber, a gram of protein, and no fat. This portion also supplies smaller amounts of a wide range of nutrients, including B vitamins, vitamin K, calcium, iron, magnesium, potassium, zinc, and manganese.</p>
+<!--                Use this button to go to the next slide-->
                 <button id="text_button">NEXT</button>
         <br />
             </div>
             <div class = "clear"></div>
+<!--            leftside bar is for the ingredients of the dates-->
             <div id = "leftsidebar" class = "sidebar">
                 <h3>INGREDIENTS FOR DATE SNACK </h3>
                 <ul>
@@ -52,8 +66,11 @@
                     <li><a href = "#">Loads of Love</a></li>
                 </ul>
             </div>
+<!--            rightsidebar has the youtube video embedded in it-->
             <div id = "rightsidebar" >
+<!--                use the iframe tag instead of the video tag because youtube. Also we allow fullscreen and pause etc-->
                 <iframe width = 100% height = "100%" src="https://www.youtube.com/embed/YoG38HP6djc" allowfullscreen controls class = "sidebar2">
+<!--                    error message just in case-->
                   Your browser does not support the video tag.
                 </iframe>
         <br />
@@ -67,8 +84,9 @@
             
             <div id = "other_recipes">
                 <h2>OTHER RECIPES TO TRY..!</h2>
-                <h3 id = "changeable_label">'Avocado Toast'</h3>
+                <h3 id = "changeable_label">Avocado Toast</h3>
                 <p id = "changeable_recipe">Toast a slice of bread. Mash 1/2 an avocado and spread it on the toast. Top with a fried or poached egg, and sprinkle with salt and pepper to taste.</p>
+<!--                same as the button above-->
                 <button id="recipe_button">NEXT</button>
         <br>
             </div>
@@ -76,12 +94,15 @@
             
         <div class = "clear"></div>
 
+<!--            This div contains the two forms-->
         <div class="row two_column">
             <div id = "feedback_div" style="width: 45%">
+<!--                textarea defines multiline text input control-->
                 <textarea id="feedback_text" placeholder="WE VALUE YOUR FEEDBACK. PLEASE LET US KNOW IF YOU LIKED OUR RECIPE :)"></textarea>
             </div>
             <div id = "recipe_div" style="width: 45%"><textarea id=feedback_text placeholder = "DO YOU HAVE ANY RECIPES OF YOUR OWN YOU WOULD LIKE TO SUBMIT? :)"></textarea></div>
         </div>
+<!--            two submit buttons in a div for ease of styling-->
             <div class=" row submit_buttons">
                 <input type = "submit" value = "SUBMIT" class = "submit_feedback">
                 <input type = "submit" value = "SUBMIT" class = "submit_recipe">
@@ -93,6 +114,7 @@
         </div>
 <!--    </footer>-->
         </div>
+<!--        js file at the end as suggested-->
         <script src="js_dates.js"></script>
     </body>
 
