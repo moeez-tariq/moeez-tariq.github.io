@@ -1,3 +1,4 @@
+//declare variables based on the IDs in SVG copied text (layer names)
 let carBody = document.getElementById("Car_Body")
 let interiorDetail = document.getElementById("Interior_Color")
 let otherDetail = document.getElementById("Details")
@@ -6,6 +7,7 @@ let textbox = document.getElementById("Text")
 let windows = document.getElementById("Windows")
 let tyres = document.getElementById("Tyres")
 
+//simple clicking event that displays information about that specific part
 carBody.addEventListener("click", () => {
     alert("The body is an exoskeleton, which is to say, the body panels are welded together to form the structure of the truck. This is not body-on-frame construction like a conventional pickup truck, nor a collection of panels bolted and welded into a unitized body shell like a typical car or crossover.")
 })
@@ -14,6 +16,7 @@ interiorDetail.addEventListener("click", () => {
     alert("The body is an exoskeleton, which is to say, the body panels are welded together to form the structure of the truck. This is not body-on-frame construction like a conventional pickup truck, nor a collection of panels bolted and welded into a unitized body shell like a typical car or crossover.")
 })
 
+//even the small details will show the information of the body
 otherDetail.addEventListener("click", () => {
     alert("The body is an exoskeleton, which is to say, the body panels are welded together to form the structure of the truck. This is not body-on-frame construction like a conventional pickup truck, nor a collection of panels bolted and welded into a unitized body shell like a typical car or crossover.")
 })
@@ -22,6 +25,7 @@ background.addEventListener("click", () => {
     alert("The Tesla Cybertruck is an battery electric light-duty truck announced by Tesla, Inc. in 2019. Three models have been announced, with EPA range estimates of 400–800 kilometers (250–500 mi) and an estimated 0–100 km/h (0–62 mph) time of 2.9–6.5 seconds, depending on the model.")
 })
 
+//want textbox to be part of the background general information as well
 textbox.addEventListener("click", () => {
     alert("The Tesla Cybertruck is an battery electric light-duty truck announced by Tesla, Inc. in 2019. Three models have been announced, with EPA range estimates of 400–800 kilometers (250–500 mi) and an estimated 0–100 km/h (0–62 mph) time of 2.9–6.5 seconds, depending on the model.")
 })
