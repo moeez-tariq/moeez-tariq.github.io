@@ -1,0 +1,121 @@
+* {
+background-color: rgb(39, 47, 94);
+box-sizing: border-box;
+color: #ccc;
+overflow-x: hidden;
+}
+
+.item {
+  display: flex;
+/*  flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 30px;
+    padding-top: 1%;
+}
+
+.moral_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 27px;
+}
+
+.startImageDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2%;
+}
+
+.startImage {
+    border: 5px solid black;
+}
+
+.storyText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 20px;
+}
+
+.storyPictureDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 7%;
+}
+
+.storyPicture {
+    border: 5px solid black;
+}
+
+.pawDiv {
+    position: fixed;
+	bottom: 0px;
+	left: 0px;
+    width: 10%;
+    background-color: none;
+}
+
+.dogDiv {
+    position: fixed;
+	bottom: 2%;
+	left: 90%;
+    width: 10%;
+    background-color: none;
+}
+
+.pawPicture {
+    padding-left: 2%;
+}
+
+/*
+.dogPicture {
+    padding-left: 85%;
+}
+*/
+
+/*credits https://blog.stackfindover.com/html-css-scroll-down-arrow-examples/*/
+.indicator {
+    width: 100px; 
+    height: 150px;
+    border: 2px solid #fff;
+    border-radius: 50px; 
+    position: relative;
+    margin-top: 1%;
+    margin-left:47.5%;
+    margin-bottom: 7%;
+}
+.indicator:before {
+    content: ""; 
+    position: absolute;
+    width: 20px; 
+    height: 20px;
+    background: #fff; 
+    margin: auto;
+    left: 0; 
+    right: 0;
+    top: 30px; 
+    border-radius: 50%;
+    animation: animate 1s linear infinite; 
+}
+@keyframes animate {
+    0% {
+        opacity: 1; top: 30px;
+    }
+    100% {
+        opacity: 0; top: 100px;
+        transform: scale(0.8);
+    }
+}
+
